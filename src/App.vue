@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Hyr här</router-link> |
+      <router-link to="/about">Om oss</router-link>
     </nav>
     <router-view/>
+    <my-Footer></my-Footer>
+
   </div>
 </template>
 
@@ -15,6 +17,8 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-image: url(../src/assets/backgroundimgtegel.jpg) ;
+  background-size: cover;
 }
 
 nav {
@@ -23,10 +27,12 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: rgba(0, 0, 0, 0.851);
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: grey;
 }
+
+
 </style>
